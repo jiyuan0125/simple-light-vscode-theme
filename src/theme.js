@@ -308,7 +308,7 @@ function getTheme({ style, name }) {
       {
         scope: ["constant.numeric"],
         settings: {
-          foreground: pick({ light: primer.blue[5], dark: primer.red[5] }),
+          foreground: pick({ light: primer.orange[6], dark: primer.red[5] }),
         },
       },
       {
