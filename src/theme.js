@@ -61,12 +61,13 @@ function getTheme({ style, name }) {
       "titleBar.inactiveBackground": pick({ light: primer.gray[1], dark: "#1f2428" }),
       "titleBar.border": pick({ light: primer.gray[2], dark: primer.white }),
 
-      "activityBar.foreground": workbenchForeground,
+      "activityBar.foreground": pick({ light: primer.white, dark: primer.black }),
       "activityBar.inactiveForeground": primer.gray[4],
-      "activityBar.background": pick({ light: primer.white, dark: primer.gray[0] }),
+      "activityBar.activeBackground": pick({ light: primer.gray[8], dark: primer.gray[1] }),
+      "activityBar.background": pick({ light: primer.gray[9], dark: primer.gray[0] }),
       "activityBarBadge.foreground": pick({ light: primer.white, dark: primer.black }),
       "activityBarBadge.background": pick({ light: primer.blue[4], dark: primer.blue[4] }),
-      "activityBar.activeBorder": "#f9826c",
+      "activityBar.activeBorder": primer.white,
       "activityBar.border": pick({ light: primer.gray[2], dark: primer.white }),
 
       "sideBar.foreground": primer.gray[6],
@@ -122,9 +123,8 @@ function getTheme({ style, name }) {
       "tab.unfocusedHoverBackground": pick({ light: primer.white, dark: primer.gray[0] }),
       "tab.border": pick({ light: primer.gray[2], dark: primer.white }),
       "tab.unfocusedActiveBorderTop": pick({ light: primer.gray[2], dark: primer.white }),
-      "tab.activeBorder": pick({ light: primer.white, dark: primer.gray[0] }),
+      "tab.activeBorder": primer.gray[9],
       "tab.unfocusedActiveBorder": pick({ light: primer.white, dark: primer.gray[0] }),
-      "tab.activeBorderTop": "#f9826c",
 
       "breadcrumb.foreground": primer.gray[5],
       "breadcrumb.focusForeground": workbenchForeground,
