@@ -66,7 +66,7 @@ function getTheme({ style, name }) {
       "activityBar.activeBackground": pick({ light: primer.gray[8], dark: primer.gray[1] }),
       "activityBar.background": pick({ light: primer.gray[9], dark: primer.gray[0] }),
       "activityBarBadge.foreground": pick({ light: primer.white, dark: primer.black }),
-      "activityBarBadge.background": pick({ light: primer.blue[4], dark: primer.blue[4] }),
+      "activityBarBadge.background": pick({ light: primer.green[6], dark: primer.blue[4] }),
       "activityBar.activeBorder": primer.white,
       "activityBar.border": pick({ light: primer.gray[2], dark: primer.white }),
 
@@ -102,14 +102,6 @@ function getTheme({ style, name }) {
       "pickerGroup.foreground": workbenchForeground,
       "quickInput.background": primer.gray[0],
       "quickInput.foreground": workbenchForeground,
-
-      "statusBar.foreground": primer.gray[6],
-      "statusBar.background": pick({ light: primer.white, dark: primer.gray[0] }),
-      "statusBar.border": pick({ light: primer.gray[2], dark: primer.white }),
-      "statusBar.noFolderBackground": pick({ light: primer.white, dark: primer.gray[0] }),
-      "statusBar.debuggingBackground": auto("#f9826c"),
-      "statusBar.debuggingForeground": pick({ light: primer.white, dark: primer.black }),
-      "statusBarItem.prominentBackground": pick({ light: "#e8eaed", dark: "#282e34" }),
 
       "editorGroupHeader.tabsBackground": pick({ light: primer.gray[1], dark: "#1f2428" }),
       "editorGroupHeader.tabsBorder": pick({ light: primer.gray[2], dark: primer.white }),
