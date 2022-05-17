@@ -3,7 +3,7 @@ const getTheme = require("./theme");
 
 const lightTheme = getTheme({
   style: "light",
-  name: "Guru Pro Light",
+  name: "Simple Light",
 });
 
 // Write themes

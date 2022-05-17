@@ -1,5 +1,5 @@
 {
-  "name": "Guru Pro Light",
+  "name": "Simple Light",
   "colors": {
     "focusBorder": "#2188ff",
     "foreground": "#444d56",
@@ -41,7 +41,7 @@
     "activityBar.activeBackground": "#2f363d",
     "activityBar.background": "#24292e",
     "activityBarBadge.foreground": "#fff",
-    "activityBarBadge.background": "#22863a",
+    "activityBarBadge.background": "#28a745",
     "activityBar.activeBorder": "#fff",
     "activityBar.border": "#e1e4e8",
     "sideBar.foreground": "#586069",
@@ -96,6 +96,8 @@
     "editor.lineHighlightBackground": "#f6f8fa",
     "editorLineNumber.foreground": "#1b1f234d",
     "editorLineNumber.activeForeground": "#24292e",
+    "editorInlayHint.foreground": "#959da5",
+    "editorInlayHint.background": "#f6f8fa",
     "editorIndentGuide.background": "#eff2f6",
     "editorIndentGuide.activeBackground": "#d7dbe0",
     "editorWhitespace.foreground": "#d1d5da",
