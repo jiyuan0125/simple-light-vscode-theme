@@ -307,6 +307,13 @@ function getTheme({ style, name }) {
         light: "#24943e50",
         dark: "#17E5E666",
       }),
+      "editorBracketHighlight.foreground1": primer.blue[6],
+      "editorBracketHighlight.foreground2": primer.orange[6],
+      "editorBracketHighlight.foreground3": primer.violet[6],
+      "editorBracketHighlight.foreground4": primer.yellow[6],
+      "editorBracketHighlight.foreground5": primer.green[6],
+      "editorBracketHighlight.foreground6": primer.gray[6],
+      "editorBracketHighlight.unexpectedBracket.foreground": primer.red[6],
       "editorBracketMatch.background": pick({
         light: "#34d05840",
         dark: "#17E5E650",
