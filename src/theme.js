@@ -261,7 +261,7 @@ function getTheme({ style, name }) {
         light: primer.gray[3],
         dark: primer.gray[2],
       }),
-      "editorCursor.foreground": primer.gray[7],
+      "editorCursor.foreground": primer.gray[8],
 
       "editor.findMatchBackground": pick({
         light: primer.yellow[4],
@@ -359,7 +359,7 @@ function getTheme({ style, name }) {
 
       "panel.background": pick({ light: primer.white, dark: "#1f2428" }),
       "panel.border": pick({ light: primer.gray[2], dark: primer.white }),
-      "panelTitle.activeBorder": "#f9826c",
+      "panelTitle.activeBorder": primer.gray[9],
       "panelTitle.activeForeground": workbenchForeground,
       "panelTitle.inactiveForeground": primer.gray[5],
       "panelInput.border": pick({
@@ -368,7 +368,7 @@ function getTheme({ style, name }) {
       }),
 
       "terminal.foreground": primer.gray[6],
-      "terminalCursor.foreground": primer.gray[7],
+      "terminalCursor.foreground": primer.gray[8],
 
       "gitDecoration.addedResourceForeground": primer.green[5],
       "gitDecoration.modifiedResourceForeground": primer.blue[6],
