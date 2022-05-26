@@ -367,7 +367,6 @@ function getTheme({ style, name }) {
         dark: primer.gray[1],
       }),
 
-      "terminal.foreground": primer.gray[6],
       "terminalCursor.foreground": primer.gray[8],
 
       "gitDecoration.addedResourceForeground": primer.green[5],
