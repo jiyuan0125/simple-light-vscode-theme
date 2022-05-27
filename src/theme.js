@@ -432,7 +432,7 @@ function getTheme({ style, name }) {
       "number": primer.orange[6],
       "regexp": primer.blue[8],
       "operator": primer.gray[9],
-      "lifetime": primer.orange[6],
+      "lifetime": primer.cyan[7],
       "*.attribute": primer.yellow[9],
       "*.unsafe": primer.pink[6],
     },

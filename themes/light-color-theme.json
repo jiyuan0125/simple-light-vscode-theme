@@ -188,7 +188,7 @@
     "number": "#e36209",
     "regexp": "#032f62",
     "operator": "#24292e",
-    "lifetime": "#e36209",
+    "lifetime": "#0097a7",
     "*.attribute": "#735c0f",
     "*.unsafe": "#d03592"
   },
