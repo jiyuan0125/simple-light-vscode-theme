@@ -8,6 +8,7 @@ function getTheme({ style, name }) {
   // Usage: `pick({ light: "lightblue", dark: "darkblue" })`
   const pick = (options) => options[style];
 
+  const a = /sdfsdf/;
   const primer = getColors(style);
 
   const workbenchForeground = pick({
@@ -399,9 +400,30 @@ function getTheme({ style, name }) {
     },
     semanticHighlighting: true,
     semanticTokenColors: {
-      "*.static": {
-        // fontStyle: "italic",
-      },
+      "*.static": {},
+      "namespace": primer.gray[9],
+      "class": primer.yellow[9],
+      "enum": primer.yellow[6],
+      "interface": primer.blue[6],
+      "struct": primer.yellow[9],
+      "typeParameter": primer.gray[9],
+      "type": primer.blue[6],
+      "parameter": primer.gray[9],
+      "variable": primer.violet[9],
+      "property": primer.violet[9],
+      "enumMember": primer.gray[9],
+      "decorator": primer.yellow[9],
+      "event": primer.gray[9],
+      "function": primer.gray[9],
+      "method": primer.gray[9],
+      "macro": primer.gray[9],
+      "label": primer.gray[9],
+      "comment": primer.gray[4],
+      "string": primer.green[6],
+      "keyword": primer.blue[6],
+      "number": primer.orange[6],
+      "regexp": primer.blue[8],
+      "operator": primer.gray[9],
     },
     tokenColors: [
       {
@@ -412,7 +434,7 @@ function getTheme({ style, name }) {
           "storage.type.class.jsdoc",
         ],
         settings: {
-          foreground: pick({ light: "#8C8C8C", dark: primer.gray[4] }),
+          foreground: pick({ light: primer.gray[4], dark: primer.gray[4] }),
         },
       },
       {
@@ -448,37 +470,36 @@ function getTheme({ style, name }) {
         scope: ["variable.other.constant", "variable.other.enummember"],
         settings: {
           foreground: primer.violet[9],
-          // fontStyle: "italic",
         },
       },
-      // {
-      //   scope: ["entity.name.type.class"],
-      //   settings: {
-      //     foreground: pick({ light: primer.black, dark: primer.purple[6] }),
-      //   },
-      // },
+      {
+        scope: ["entity.name.type.class"],
+        settings: {
+          foreground: pick({ light: primer.yellow[9], dark: primer.purple[6] }),
+        },
+      },
       {
         scope: ["meta.decorator", "support.type"],
         settings: {
-          foreground: pick({ light: primer.yellow[8], dark: primer.yellow[8] }),
+          foreground: pick({ light: primer.yellow[9], dark: primer.gray[9] }),
         },
       },
       {
         scope: ["meta.decorator"],
         settings: {
-          foreground: pick({ light: primer.yellow[8], dark: primer.yellow[8] }),
+          foreground: pick({ light: primer.yellow[9], dark: primer.gray[9] }),
         },
       },
       {
         scope: ["meta.decorator entity.name.function"],
         settings: {
-          foreground: pick({ light: primer.yellow[8], dark: primer.yellow[8] }),
+          foreground: pick({ light: primer.yellow[9], dark: primer.gray[9] }),
         },
       },
       {
         scope: ["entity.name.function.member"],
         settings: {
-          foreground: pick({ light: "#00627A", dark: "#00627A" }),
+          foreground: pick({ light: primer.gray[9], dark: primer.gray[9] }),
         },
       },
       {
@@ -534,7 +555,7 @@ function getTheme({ style, name }) {
           "string punctuation.section.embedded source",
         ],
         settings: {
-          foreground: pick({ light: "#067D17", dark: "#9ecbff" }),
+          foreground: pick({ light: primer.green[6], dark: primer.green[6] }),
         },
       },
       {
