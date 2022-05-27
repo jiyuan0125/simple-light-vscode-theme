@@ -157,10 +157,18 @@
   "semanticHighlighting": true,
   "semanticTokenColors": {
     "*.static": {},
+    "*.mutable": {
+      "underline": true
+    },
+    "*.consuming": {
+      "italic": true
+    },
+    "*.public.declaration": {},
     "namespace": "#24292e",
     "class": "#735c0f",
-    "enum": "#f9c513",
-    "interface": "#005cc5",
+    "enum": "#735c0f",
+    "union": "#735c0f",
+    "interface": "#735c0f",
     "struct": "#735c0f",
     "typeParameter": "#24292e",
     "type": "#005cc5",
@@ -172,14 +180,17 @@
     "event": "#24292e",
     "function": "#24292e",
     "method": "#24292e",
-    "macro": "#24292e",
+    "macro": "#0097a7",
     "label": "#24292e",
     "comment": "#959da5",
     "string": "#22863a",
     "keyword": "#005cc5",
     "number": "#e36209",
     "regexp": "#032f62",
-    "operator": "#24292e"
+    "operator": "#24292e",
+    "lifetime": "#e36209",
+    "*.attribute": "#735c0f",
+    "*.unsafe": "#d03592"
   },
   "tokenColors": [
     {

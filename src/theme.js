@@ -401,9 +401,17 @@ function getTheme({ style, name }) {
     semanticHighlighting: true,
     semanticTokenColors: {
       "*.static": {},
+      "*.mutable": {
+        "underline": true
+      },
+      "*.consuming": {
+        "italic": true
+      },
+      "*.public.declaration": {},
       "namespace": primer.gray[9],
       "class": primer.yellow[9],
       "enum": primer.yellow[9],
+      "union": primer.yellow[9],
       "interface": primer.yellow[9],
       "struct": primer.yellow[9],
       "typeParameter": primer.gray[9],
@@ -416,7 +424,7 @@ function getTheme({ style, name }) {
       "event": primer.gray[9],
       "function": primer.gray[9],
       "method": primer.gray[9],
-      "macro": primer.gray[9],
+      "macro": primer.cyan[7],
       "label": primer.gray[9],
       "comment": primer.gray[4],
       "string": primer.green[6],
@@ -424,6 +432,9 @@ function getTheme({ style, name }) {
       "number": primer.orange[6],
       "regexp": primer.blue[8],
       "operator": primer.gray[9],
+      "lifetime": primer.orange[6],
+      "*.attribute": primer.yellow[9],
+      "*.unsafe": primer.pink[6],
     },
     tokenColors: [
       {
