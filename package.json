@@ -2,7 +2,7 @@
   "name": "simple-light-vscode-theme",
   "displayName": "Simple Light",
   "description": "VSCode theme inspired from Guru Light",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "license": "MIT",
   "publisher": "jiyuan0125",
   "engines": {
