@@ -313,7 +313,7 @@ function getTheme({ style, name }) {
       "editorBracketHighlight.foreground3": primer.green[6],
       "editorBracketHighlight.foreground4": primer.purple[6],
       "editorBracketHighlight.foreground5": primer.gray[6],
-      "editorBracketHighlight.foreground6": primer.pink[6],
+      "editorBracketHighlight.foreground6": primer.yellow[9],
       "editorBracketHighlight.unexpectedBracket.foreground": primer.red[6],
       "editorBracketMatch.background": pick({
         light: "#34d05840",
