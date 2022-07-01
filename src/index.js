@@ -2,7 +2,6 @@ const fs = require("fs").promises;
 const getTheme = require("./theme");
 
 const lightTheme = getTheme({
-  style: "light",
   name: "Simple Light",
 });
 
