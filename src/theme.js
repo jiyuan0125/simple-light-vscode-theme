@@ -246,7 +246,7 @@ function getTheme({ name }) {
       {
         scope: ["meta.decorator", "entity.name.function"],
         settings: {
-          foreground: primer.cyan[7],
+          foreground: primer.violet[9],
         },
       },
       {
