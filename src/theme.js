@@ -189,264 +189,126 @@ function getTheme({ name }) {
       "welcomePage.buttonBackground": primer.gray[1],
       "welcomePage.buttonHoverBackground": primer.gray[2],
     },
-    semanticHighlighting: true,
     tokenColors: [
       {
-        scope: [
-          "comment",
-          "punctuation.definition.comment",
-          "string.comment",
-          "storage.type.class.jsdoc",
-        ],
+        settings: {
+          foreground: primer.gray[9],
+        }
+      },
+      {
+        name: "Comment",
+        scope: "comment",
         settings: {
           foreground: primer.gray[4],
         },
       },
       {
-        scope: ["variable.other.jsdoc"],
-        settings: {
-          foreground: primer.gray[8],
-        },
-      },
-      {
+        name: "Variable",
         scope: [
           "variable.language",
-          "variable.other.readwrite",
-          "variable.parameter",
-          "keyword.operator",
+          "variable.other"
         ],
         settings: {
           foreground: primer.black,
         },
       },
       {
-        scope: ["variable.other.constant", "variable.other.enummember"],
+        name: "Class name",
+        scope: [
+          "entity.name.class",
+          "entity.name.type",
+          "entity.name.namespace",
+          "entity.name.scope-resolution"
+        ],
+        settings: {
+          foreground: primer.yellow[9],
+        },
+      },
+      {
+        name: "Function name",
+        scope: ["entity.name.function"],
         settings: {
           foreground: primer.violet[9],
         },
       },
       {
-        scope: ["entity.name.type.class"],
-        settings: {
-          foreground: primer.yellow[9],
-        },
-      },
-      {
-        scope: ["meta.decorator", "support.type"],
-        settings: {
-          foreground: primer.yellow[9],
-        },
-      },
-      {
-        scope: ["meta.decorator"],
-        settings: {
-          foreground: primer.yellow[9],
-        },
-      },
-      {
-        scope: ["meta.decorator", "entity.name.function"],
-        settings: {
-          foreground: primer.violet[9],
-        },
-      },
-      {
-        scope: ["entity.name.function.member"],
-        settings: {
-          foreground: primer.gray[9],
-        },
-      },
-      {
-        scope: "variable.parameter.function",
+        name: "Function argument",
+        scope: "variable.parameter",
         settings: {
           foreground: editorForeground,
         },
       },
       {
+        name: "Tag name",
         scope: "entity.name.tag",
         settings: {
           foreground: primer.green[6],
         },
       },
       {
-        scope: [
-          "keyword",
-          "keyword.operator.new",
-          "storage.modifier",
-          "storage.type.property",
-          "storage.type.class",
-          "meta.var.expr storage.type",
-          "storage.type.enum",
-          "variable.language.this",
-          "constant.language",
-          "support.type.primitive",
-        ],
+        name: "Keyword",
+        scope: "keyword",
         settings: {
           foreground: primer.blue[6],
           fontStyle: "",
         },
       },
       {
+        name: "Number",
         scope: ["constant.numeric"],
         settings: {
           foreground: primer.orange[6],
         },
       },
       {
-        scope: [
-          "storage.modifier.package",
-          "storage.modifier.import",
-          "storage.type.java",
-        ],
-        settings: {
-          foreground: editorForeground,
-        },
-      },
-      {
+        name: "String",
         scope: [
           "string",
-          "punctuation.definition.string",
-          "string punctuation.section.embedded source",
         ],
         settings: {
           foreground: primer.green[6],
         },
       },
       {
-        scope: ["variable.other.property"],
-        settings: {
-          foreground: primer.violet[9],
-        },
-      },
-      {
-        scope: "meta.property-name",
-        settings: {
-          foreground: primer.blue[6],
-        },
-      },
-      {
-        scope: "invalid.broken",
-        settings: {
-          // fontStyle: "italic",
-          foreground: primer.red[7],
-        },
-      },
-      {
-        scope: "invalid.deprecated",
-        settings: {
-          // fontStyle: "italic",
-          foreground: primer.red[7],
-        },
-      },
-      {
-        scope: "invalid.illegal",
-        settings: {
-          // fontStyle: "italic",
-          foreground: primer.red[7],
-        },
-      },
-      {
-        scope: "invalid.unimplemented",
-        settings: {
-          // fontStyle: "italic",
-          foreground: primer.red[7],
-        },
-      },
-      {
-        scope: "carriage-return",
-        settings: {
-          // fontStyle: "italic underline",
-          fontStyle: "underline",
-          background: primer.red[5],
-          foreground: primer.gray[0],
-          content: "^M",
-        },
-      },
-      {
-        scope: "message.error",
+        name: "Invalid",
+        scope: "invalid",
         settings: {
           foreground: primer.red[7],
         },
       },
       {
-        scope: "string source",
-        settings: {
-          foreground: editorForeground,
-        },
-      },
-      {
-        scope: "string variable",
-        settings: {
-          foreground: primer.blue[6],
-        },
-      },
-      {
-        scope: ["source.regexp", "string.regexp"],
+        name: "Regexp",
+        scope: ["string.regexp"],
         settings: {
           foreground: primer.blue[8],
         },
       },
       {
+        name: "Library constant",
         scope: [
-          "string.regexp.character-class",
-          "string.regexp constant.character.escape",
-          "string.regexp source.ruby.embedded",
-          "string.regexp string.regexp.arbitrary-repitition",
+          "support.constant",
+          "support.variable"
         ],
         settings: {
-          foreground: primer.blue[8],
-        },
-      },
-      {
-        scope: "string.regexp constant.character.escape",
-        settings: {
-          fontStyle: "bold",
-          foreground: primer.green[6],
-        },
-      },
-      {
-        scope: "support.constant",
-        settings: {
           foreground: primer.blue[6],
         },
       },
       {
-        scope: "support.variable",
-        settings: {
-          foreground: primer.blue[6],
-        },
-      },
-      {
-        scope: "meta.module-reference",
-        settings: {
-          foreground: primer.blue[6],
-        },
-      },
-      {
-        scope: "punctuation.definition.list.begin.markdown",
-        settings: {
-          foreground: primer.orange[6],
-        },
-      },
-      {
-        scope: ["markup.heading", "markup.heading entity.name"],
-        settings: {
-          fontStyle: "bold",
-          foreground: primer.blue[6],
-        },
-      },
-      {
+        name: "Markup Quote",
         scope: "markup.quote",
         settings: {
           foreground: primer.green[6],
         },
       },
       {
+        name: "Markup: Underline",
         scope: "markup.underline",
         settings: {
           fontStyle: "underline"
         }
       },
       {
+        name: "Markup: Emphasis",
         scope: "markup.italic",
         settings: {
           fontStyle: "italic",
@@ -454,107 +316,21 @@ function getTheme({ name }) {
         },
       },
       {
+        name: "Markup: Strong",
         scope: "markup.bold",
         settings: {
           fontStyle: "bold",
           foreground: editorForeground,
         },
       },
-      {
-        scope: "markup.raw",
-        settings: {
-          foreground: primer.blue[6],
-        },
-      },
-      {
-        scope: [
-          "markup.deleted",
-          "meta.diff.header.from-file",
-          "punctuation.definition.deleted",
-        ],
-        settings: {
-          background: primer.red[0],
-          foreground: primer.red[7],
-        },
-      },
-      {
-        scope: [
-          "markup.inserted",
-          "meta.diff.header.to-file",
-          "punctuation.definition.inserted",
-        ],
-        settings: {
-          background: primer.green[0],
-          foreground: primer.green[6],
-        },
-      },
-      {
-        scope: ["markup.changed", "punctuation.definition.changed"],
-        settings: {
-          background: primer.orange[1],
-          foreground: primer.orange[6],
-        },
-      },
-      {
-        scope: ["markup.ignored", "markup.untracked"],
-        settings: {
-          foreground: primer.gray[1],
-          background: primer.blue[6],
-        },
-      },
-      {
-        scope: "meta.diff.range",
-        settings: {
-          foreground: primer.purple[5],
-          fontStyle: "bold",
-        },
-      },
-      {
-        scope: "meta.diff.header",
-        settings: {
-          foreground: primer.blue[6],
-        },
-      },
-      {
-        scope: "meta.separator",
-        settings: {
-          fontStyle: "bold",
-          foreground: primer.blue[6],
-        },
-      },
-      {
-        scope: "meta.output",
-        settings: {
-          foreground: primer.blue[6],
-        },
-      },
-      {
-        scope: [
-          "brackethighlighter.tag",
-          "brackethighlighter.curly",
-          "brackethighlighter.round",
-          "brackethighlighter.square",
-          "brackethighlighter.angle",
-          "brackethighlighter.quote",
-        ],
-        settings: {
-          foreground: primer.gray[6],
-        },
-      },
-      {
-        scope: "brackethighlighter.unmatched",
-        settings: {
-          foreground: primer.red[7],
-        },
-      },
-      {
-        scope: ["constant.other.reference.link", "string.other.link"],
-        settings: {
-          foreground: primer.blue[8],
-          fontStyle: "underline",
-        },
-      },
     ],
+    semanticHighlighting: true,
+    semanticTokenColors: {
+      newOperator: primer.blue[6],
+      stringLiteral: primer.green[6],
+      customLiteral: primer.violet[9],
+      numberLiteral: primer.orange[6],
+    }
   };
 }
 
