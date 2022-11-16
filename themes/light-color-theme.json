@@ -216,8 +216,21 @@
       "name": "Keyword",
       "scope": "keyword",
       "settings": {
-        "foreground": "#005cc5",
-        "fontStyle": ""
+        "foreground": "#005cc5"
+      }
+    },
+    {
+      "name": "Storage",
+      "scope": "storage",
+      "settings": {
+        "foreground": "#005cc5"
+      }
+    },
+    {
+      "name": "Storage",
+      "scope": "support.type.property-name",
+      "settings": {
+        "foreground": "#1b1f23"
       }
     },
     {

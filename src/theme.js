@@ -250,7 +250,20 @@ function getTheme({ name }) {
         scope: "keyword",
         settings: {
           foreground: primer.blue[6],
-          fontStyle: "",
+        },
+      },
+      {
+        name: "Storage",
+        scope: "storage",
+        settings: {
+          foreground: primer.blue[6],
+        },
+      },
+      {
+        name: "Storage",
+        scope: "support.type.property-name",
+        settings: {
+          foreground: primer.black,
         },
       },
       {
