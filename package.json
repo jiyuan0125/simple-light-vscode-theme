@@ -2,9 +2,10 @@
   "name": "simple-light-vscode-theme",
   "displayName": "Simple Light",
   "description": "VSCode theme inspired from Guru Light",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "license": "MIT",
   "publisher": "jiyuan0125",
+  "icon": "./images/icon.png",
   "engines": {
     "vscode": "^1.57.0"
   },
@@ -13,10 +14,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/jiyuan0125/simple-light-vscode-theme"
+    "url": "https://github.com/jiyuan0125/simple-light-vscode-theme"
   },
   "bugs": {
-    "url": "https://gitee.com/jiyuan0125/simple-vscode-theme/issues"
+    "url": "https://github.com/jiyuan0125/simple-light-vscode-theme/issues"
   },
   "contributes": {
     "themes": [
