@@ -274,12 +274,26 @@ function getTheme({ name }) {
         },
       },
       {
+        name: "Boolean",
+        scope: ["constant.language.boolean"],
+        settings: {
+          foreground: primer.purple[5],
+        },
+      },
+      {
         name: "String",
         scope: [
           "string",
         ],
         settings: {
           foreground: primer.green[6],
+        },
+      },
+      {
+        name: "String Unquoted",
+        scope: "string.unquoted",
+        settings: {
+          foreground: primer.black,
         },
       },
       {

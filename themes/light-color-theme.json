@@ -243,12 +243,28 @@
       }
     },
     {
+      "name": "Boolean",
+      "scope": [
+        "constant.language.boolean"
+      ],
+      "settings": {
+        "foreground": "#6f42c1"
+      }
+    },
+    {
       "name": "String",
       "scope": [
         "string"
       ],
       "settings": {
         "foreground": "#22863a"
+      }
+    },
+    {
+      "name": "String Unquoted",
+      "scope": "string.unquoted",
+      "settings": {
+        "foreground": "#1b1f23"
       }
     },
     {
