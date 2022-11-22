@@ -277,7 +277,7 @@ function getTheme({ name }) {
         name: "Boolean",
         scope: ["constant.language.boolean"],
         settings: {
-          foreground: primer.purple[5],
+          foreground: primer.blue[6],
         },
       },
       {
