@@ -1,11 +1,10 @@
 const { getColors } = require("./primer");
 
 function getTheme({ name }) {
-
   const primer = getColors();
 
   const workbenchForeground = primer.gray[8];
-  const editorForeground = primer.gray[9];
+  const editorForeground = primer.black;
 
   return {
     name: name,
@@ -191,173 +190,43 @@ function getTheme({ name }) {
     },
     tokenColors: [
       {
+        scope: ["comment"],
         settings: {
-          foreground: primer.gray[9],
-        }
-      },
-      {
-        name: "Comment",
-        scope: "comment",
-        settings: {
-          foreground: primer.gray[4],
+          foreground: primer.gray[5],
         },
       },
       {
-        name: "Variable",
-        scope: [
-          "variable.language",
-          "variable.other"
-        ],
+        scope: ["keyword", "entity.name.namespace"],
         settings: {
           foreground: primer.black,
         },
       },
       {
-        name: "Class name",
-        scope: [
-          "entity.name.class",
-          "entity.name.type",
-          "entity.name.namespace",
-          "entity.name.scope-resolution"
-        ],
+        scope: ["entity.name.type"],
         settings: {
-          foreground: primer.yellow[9],
+          foreground: primer.blue[5],
         },
       },
       {
-        name: "Function name",
-        scope: ["entity.name.function"],
+        scope: ["function", "entity.name.function"],
         settings: {
-          foreground: primer.violet[9],
+          foreground: primer.orange[8],
         },
       },
       {
-        name: "Function argument",
-        scope: "variable.parameter",
+        scope: ["string", "constant.language.boolean", "constant.numeric"],
         settings: {
-          foreground: editorForeground,
+          foreground: primer.green[5],
         },
       },
       {
-        name: "Tag name",
-        scope: "entity.name.tag",
+        scope: ["variable.parameter", "variable.other.property"],
         settings: {
-          foreground: primer.green[6],
-        },
-      },
-      {
-        name: "Keyword",
-        scope: "keyword",
-        settings: {
-          foreground: primer.blue[6],
-        },
-      },
-      {
-        name: "Storage",
-        scope: "storage",
-        settings: {
-          foreground: primer.blue[6],
-        },
-      },
-      {
-        name: "Storage",
-        scope: "support.type.property-name",
-        settings: {
-          foreground: primer.black,
-        },
-      },
-      {
-        name: "Number",
-        scope: ["constant.numeric"],
-        settings: {
-          foreground: primer.orange[6],
-        },
-      },
-      {
-        name: "Boolean",
-        scope: ["constant.language.boolean"],
-        settings: {
-          foreground: primer.blue[6],
-        },
-      },
-      {
-        name: "String",
-        scope: [
-          "string",
-        ],
-        settings: {
-          foreground: primer.green[6],
-        },
-      },
-      {
-        name: "String Unquoted",
-        scope: "string.unquoted",
-        settings: {
-          foreground: primer.black,
-        },
-      },
-      {
-        name: "Invalid",
-        scope: "invalid",
-        settings: {
-          foreground: primer.red[7],
-        },
-      },
-      {
-        name: "Regexp",
-        scope: ["string.regexp"],
-        settings: {
-          foreground: primer.blue[8],
-        },
-      },
-      {
-        name: "Library constant",
-        scope: [
-          "support.constant",
-          "support.variable"
-        ],
-        settings: {
-          foreground: primer.blue[6],
-        },
-      },
-      {
-        name: "Markup Quote",
-        scope: "markup.quote",
-        settings: {
-          foreground: primer.green[6],
-        },
-      },
-      {
-        name: "Markup: Underline",
-        scope: "markup.underline",
-        settings: {
-          fontStyle: "underline"
-        }
-      },
-      {
-        name: "Markup: Emphasis",
-        scope: "markup.italic",
-        settings: {
-          fontStyle: "italic",
-          foreground: editorForeground,
-        },
-      },
-      {
-        name: "Markup: Strong",
-        scope: "markup.bold",
-        settings: {
-          fontStyle: "bold",
-          foreground: editorForeground,
+          foreground: primer.purple[5],
         },
       },
     ],
     semanticHighlighting: true,
-    semanticTokenColors: {
-      newOperator: primer.blue[6],
-      stringLiteral: primer.green[6],
-      customLiteral: primer.violet[9],
-      numberLiteral: primer.orange[6],
-    }
   };
 }
 

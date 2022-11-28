@@ -1,6 +1,6 @@
 {
   "$schema": "./colors.schema.json",
-  "black": "#1b1f23",
+  "black": "#000",
   "white": "#fff",
   "gray": [
     "#fafbfc",
