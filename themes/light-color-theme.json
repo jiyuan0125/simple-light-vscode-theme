@@ -167,7 +167,8 @@
       "scope": [
         "keyword",
         "entity.name.namespace",
-        "support.type.property-name.json"
+        "support.type.property-name.json",
+        "string.unquoted.plain.out.yaml"
       ],
       "settings": {
         "foreground": "#000"
@@ -195,7 +196,7 @@
         "string",
         "constant.language.boolean",
         "constant.numeric",
-        "meta.tag.xml"
+        "entity.name.tag"
       ],
       "settings": {
         "foreground": "#22863a"

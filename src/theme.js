@@ -200,6 +200,7 @@ function getTheme({ name }) {
           "keyword",
           "entity.name.namespace",
           "support.type.property-name.json",
+          "string.unquoted.plain.out.yaml",
         ],
         settings: {
           foreground: primer.black,
@@ -222,7 +223,7 @@ function getTheme({ name }) {
           "string",
           "constant.language.boolean",
           "constant.numeric",
-          "meta.tag.xml",
+          "entity.name.tag",
         ],
         settings: {
           foreground: primer.green[6],
