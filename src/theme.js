@@ -196,7 +196,11 @@ function getTheme({ name }) {
         },
       },
       {
-        scope: ["keyword", "entity.name.namespace"],
+        scope: [
+          "keyword",
+          "entity.name.namespace",
+          "support.type.property-name.json",
+        ],
         settings: {
           foreground: primer.black,
         },
@@ -204,7 +208,7 @@ function getTheme({ name }) {
       {
         scope: ["entity.name.type"],
         settings: {
-          foreground: primer.blue[5],
+          foreground: primer.blue[6],
         },
       },
       {
@@ -214,9 +218,14 @@ function getTheme({ name }) {
         },
       },
       {
-        scope: ["string", "constant.language.boolean", "constant.numeric"],
+        scope: [
+          "string",
+          "constant.language.boolean",
+          "constant.numeric",
+          "meta.tag.xml",
+        ],
         settings: {
-          foreground: primer.green[5],
+          foreground: primer.green[6],
         },
       },
       {

@@ -166,7 +166,8 @@
     {
       "scope": [
         "keyword",
-        "entity.name.namespace"
+        "entity.name.namespace",
+        "support.type.property-name.json"
       ],
       "settings": {
         "foreground": "#000"
@@ -177,7 +178,7 @@
         "entity.name.type"
       ],
       "settings": {
-        "foreground": "#0366d6"
+        "foreground": "#005cc5"
       }
     },
     {
@@ -193,10 +194,11 @@
       "scope": [
         "string",
         "constant.language.boolean",
-        "constant.numeric"
+        "constant.numeric",
+        "meta.tag.xml"
       ],
       "settings": {
-        "foreground": "#28a745"
+        "foreground": "#22863a"
       }
     },
     {
