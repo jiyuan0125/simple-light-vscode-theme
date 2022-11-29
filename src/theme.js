@@ -203,7 +203,7 @@ function getTheme({ name }) {
           "string.unquoted.plain.out.yaml",
         ],
         settings: {
-          foreground: primer.black,
+          foreground: primer.violet[8],
         },
       },
       {
@@ -227,12 +227,6 @@ function getTheme({ name }) {
         ],
         settings: {
           foreground: primer.green[6],
-        },
-      },
-      {
-        scope: ["variable.parameter", "variable.other.property"],
-        settings: {
-          foreground: primer.purple[5],
         },
       },
     ],

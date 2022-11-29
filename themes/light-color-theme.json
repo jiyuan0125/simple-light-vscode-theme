@@ -171,7 +171,7 @@
         "string.unquoted.plain.out.yaml"
       ],
       "settings": {
-        "foreground": "#000"
+        "foreground": "#93289f"
       }
     },
     {
@@ -200,15 +200,6 @@
       ],
       "settings": {
         "foreground": "#22863a"
-      }
-    },
-    {
-      "scope": [
-        "variable.parameter",
-        "variable.other.property"
-      ],
-      "settings": {
-        "foreground": "#6f42c1"
       }
     }
   ],
