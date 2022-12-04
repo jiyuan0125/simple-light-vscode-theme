@@ -179,7 +179,7 @@
         "entity.name.type"
       ],
       "settings": {
-        "foreground": "#005cc5"
+        "foreground": "#c24e00"
       }
     },
     {
@@ -188,7 +188,7 @@
         "entity.name.function"
       ],
       "settings": {
-        "foreground": "#c24e00"
+        "foreground": "#005cc5"
       }
     },
     {

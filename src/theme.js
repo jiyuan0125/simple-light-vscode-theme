@@ -209,13 +209,13 @@ function getTheme({ name }) {
       {
         scope: ["entity.name.type"],
         settings: {
-          foreground: primer.blue[6],
+          foreground: primer.orange[8],
         },
       },
       {
         scope: ["function", "entity.name.function"],
         settings: {
-          foreground: primer.orange[8],
+          foreground: primer.blue[6],
         },
       },
       {
