@@ -1,6 +1,6 @@
 # Simple Light VSCode Theme
 
-VSCode theme inspired from Guru Light
+VSCode theme inspired from Idea Light
 
 ## Preview
 
@@ -15,10 +15,11 @@ VSCode theme inspired from Guru Light
 
 ![Go](./images/go.png)
 
+**TypeScript**
+
+![TypeScript](./images/typescript.png)
+
 **Java**
 
 ![Java](./images/java.png)
 
-**JavaScript**
-
-![JavaScript](./images/javascript.png)
