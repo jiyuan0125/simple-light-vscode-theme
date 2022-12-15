@@ -205,9 +205,13 @@
   ],
   "semanticTokenColors": {
     "enumMember": "#c24e00",
-    "typeParameter": "#00897b",
+    "typeParameter": "#0097a7",
+    "lifetime": "#0097a7",
     "namespace": "#000",
-    "*.attribute": "#b08800"
+    "*.attribute": "#b08800",
+    "*.mutable": {
+      "fontStyle": "underline"
+    }
   },
   "semanticHighlighting": true
 }

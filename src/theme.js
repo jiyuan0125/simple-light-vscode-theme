@@ -232,7 +232,8 @@ function getTheme({ name }) {
     ],
     semanticTokenColors: {
       enumMember: primer.orange[8],
-      typeParameter: primer.cyan[6],
+      typeParameter: primer.cyan[7],
+      lifetime: primer.cyan[7],
       namespace: primer.black,
       "*.attribute": primer.yellow[8],
       "*.mutable": {
