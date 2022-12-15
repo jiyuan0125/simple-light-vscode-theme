@@ -209,7 +209,7 @@ function getTheme({ name }) {
       {
         scope: ["entity.name.type"],
         settings: {
-          foreground: primer.orange[8],
+          foreground: primer.black,
         },
       },
       {
@@ -230,6 +230,12 @@ function getTheme({ name }) {
         },
       },
     ],
+    semanticTokenColors: {
+      enumMember: primer.orange[8],
+      typeParameter: primer.teal[6],
+      namespace: primer.black,
+      "*.attribute": primer.yellow[8],
+    },
     semanticHighlighting: true,
   };
 }

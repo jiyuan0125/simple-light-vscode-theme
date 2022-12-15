@@ -179,7 +179,7 @@
         "entity.name.type"
       ],
       "settings": {
-        "foreground": "#c24e00"
+        "foreground": "#000"
       }
     },
     {
@@ -203,5 +203,11 @@
       }
     }
   ],
+  "semanticTokenColors": {
+    "enumMember": "#c24e00",
+    "typeParameter": "#00897b",
+    "namespace": "#000",
+    "*.attribute": "#b08800"
+  },
   "semanticHighlighting": true
 }
