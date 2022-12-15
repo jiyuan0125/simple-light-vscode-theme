@@ -232,9 +232,12 @@ function getTheme({ name }) {
     ],
     semanticTokenColors: {
       enumMember: primer.orange[8],
-      typeParameter: primer.teal[6],
+      typeParameter: primer.cyan[6],
       namespace: primer.black,
       "*.attribute": primer.yellow[8],
+      "*.mutable": {
+        fontStyle: "underline",
+      },
     },
     semanticHighlighting: true,
   };
