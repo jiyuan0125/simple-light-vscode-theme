@@ -204,7 +204,7 @@
     }
   ],
   "semanticTokenColors": {
-    "enumMember": "#c24e00",
+    "interface": "#c24e00",
     "typeParameter": "#0097a7",
     "lifetime": "#0097a7",
     "namespace": "#000",

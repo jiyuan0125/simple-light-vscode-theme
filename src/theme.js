@@ -231,7 +231,7 @@ function getTheme({ name }) {
       },
     ],
     semanticTokenColors: {
-      enumMember: primer.orange[8],
+      interface: primer.orange[8],
       typeParameter: primer.cyan[7],
       lifetime: primer.cyan[7],
       namespace: primer.black,
