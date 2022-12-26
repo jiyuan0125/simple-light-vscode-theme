@@ -198,7 +198,6 @@ function getTheme({ name }) {
       {
         scope: [
           "keyword",
-          "entity.name.namespace",
           "support.type.property-name.json",
           "string.unquoted.plain.out.yaml",
         ],
