@@ -207,6 +207,10 @@
     "typeParameter": "#0097a7",
     "lifetime": "#0097a7",
     "namespace": "#000",
+    "enumMember": {
+      "foreground": "#000",
+      "fontStyle": "italic"
+    },
     "*.attribute": "#b08800",
     "*.mutable": {
       "fontStyle": "underline"
