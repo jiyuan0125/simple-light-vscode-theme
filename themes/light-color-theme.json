@@ -208,7 +208,7 @@
     "lifetime": "#0097a7",
     "namespace": "#000",
     "enumMember": {
-      "foreground": "#000",
+      "foreground": "#005cc5",
       "fontStyle": "italic"
     },
     "*.attribute": "#b08800",

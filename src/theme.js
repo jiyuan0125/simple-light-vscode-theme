@@ -234,7 +234,7 @@ function getTheme({ name }) {
       typeParameter: primer.cyan[7],
       lifetime: primer.cyan[7],
       namespace: primer.black,
-      enumMember: { foreground: primer.black, fontStyle: "italic" },
+      enumMember: { foreground: primer.blue[6], fontStyle: "italic" },
       "*.attribute": primer.yellow[8],
       "*.mutable": {
         fontStyle: "underline",
