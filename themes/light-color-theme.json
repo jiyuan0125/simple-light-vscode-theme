@@ -92,7 +92,7 @@
     "editor.foreground": "#000",
     "editor.background": "#fff",
     "editorWidget.background": "#f6f8fa",
-    "editor.foldBackground": "#d1d5da11",
+    "editor.foldBackground": "#f1f8ff",
     "editor.lineHighlightBackground": "#f6f8fa",
     "editorLineNumber.foreground": "#1b1f234d",
     "editorLineNumber.activeForeground": "#000",

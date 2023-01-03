@@ -117,7 +117,7 @@ function getTheme({ name }) {
       "editor.foreground": editorForeground,
       "editor.background": primer.white,
       "editorWidget.background": primer.gray[1],
-      "editor.foldBackground": "#d1d5da11",
+      "editor.foldBackground": primer.blue[0],
       "editor.lineHighlightBackground": primer.gray[1],
       "editorLineNumber.foreground": "#1b1f234d",
       "editorLineNumber.activeForeground": editorForeground,
