@@ -207,11 +207,14 @@
     "typeParameter": "#0097a7",
     "lifetime": "#0097a7",
     "namespace": "#000",
+    "enum": {
+      "foreground": "#735c0f"
+    },
     "enumMember": {
-      "foreground": "#005cc5",
+      "foreground": "#735c0f",
       "fontStyle": "italic"
     },
-    "*.attribute": "#b08800",
+    "*.attribute": "#c24e00",
     "*.mutable": {
       "fontStyle": "underline"
     }
