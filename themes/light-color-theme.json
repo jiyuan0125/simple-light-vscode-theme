@@ -214,7 +214,7 @@
       "foreground": "#735c0f",
       "fontStyle": "italic"
     },
-    "*.attribute": "#c24e00",
+    "*.attribute": "#735c0f",
     "*.mutable": {
       "fontStyle": "underline"
     }
